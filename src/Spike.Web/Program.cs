@@ -1,4 +1,5 @@
 using Azure.Messaging.ServiceBus;
+using Azure.Storage.Blobs;
 using Flurl.Http;
 using Microsoft.AspNetCore.HttpLogging;
 using Spike.Web;
@@ -82,6 +83,22 @@ app.MapGet("/trigger-sb", async (HttpContext httpContext) =>
         await client.DisposeAsync();
     }
 
+    return "ok";
+});
+
+
+app.MapGet("/trigger-blob", async (HttpContext httpContext) =>
+{
+    var blobContainerClient = new BlobContainerClient("UseDevelopmentStorage=true", "samples-workitems");
+    blobContainerClient.CreateIfNotExists();
+    
+    var blobClient = blobContainerClient.GetBlobClient($"{Guid.NewGuid()}.json");
+
+    string blobContents = $@"{{
+'id':'{Guid.NewGuid()}'
+}}";
+    
+    await blobClient.UploadAsync(BinaryData.FromString(blobContents), overwrite: true);
     return "ok";
 });
 
