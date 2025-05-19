@@ -37,7 +37,7 @@ Uses open telemetry collector + Jaeger + Prometheus + seq
     "OTEL_SERVICE_NAME": "dev-spike-func",
     "OTEL_EXPORTER_OTLP_ENDPOINT": "http://localhost:4317/",
     "OTEL_EXPORTER_OTLP_PROTOCOL": "grpc",
-    "ServiceBusConnection": "Endpoint=sb://localhost;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;"
+    "ServiceBusConnection": "Endpoint=sb://localhost;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;",
   }
 }
 ```
