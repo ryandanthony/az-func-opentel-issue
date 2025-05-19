@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Spike.Func": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7085",
+      "launchBrowser": false
+    }
+  }
+}

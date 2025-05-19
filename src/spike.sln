@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spike.Web", "Spike.Web\Spike.Web.csproj", "{2FCB1C33-B2F8-494C-A979-BC8FB6B53120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spike.Func", "Spike.Func\Spike.Func.csproj", "{A15DF87D-0D2C-43DC-A122-FD9BD0E2CDD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FCB1C33-B2F8-494C-A979-BC8FB6B53120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCB1C33-B2F8-494C-A979-BC8FB6B53120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCB1C33-B2F8-494C-A979-BC8FB6B53120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCB1C33-B2F8-494C-A979-BC8FB6B53120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15DF87D-0D2C-43DC-A122-FD9BD0E2CDD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15DF87D-0D2C-43DC-A122-FD9BD0E2CDD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15DF87D-0D2C-43DC-A122-FD9BD0E2CDD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15DF87D-0D2C-43DC-A122-FD9BD0E2CDD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADF3E6EA-61E5-4235-A261-E131E26CADC8}
+	EndGlobalSection
+EndGlobal
